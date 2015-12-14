@@ -1,0 +1,25 @@
+<head>
+  <title>moment-helpers-issue-32</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+
+  <p class="lead">
+    <strong>Raw some date</strong><br>
+    {{someDate}}
+  </p>
+  <p class="lead">
+    <strong>Raw some date</strong><br>
+    {{moFormat someDate 'YYYY'}}
+  </p>
+  <p class="lead">
+    <strong>moFormat moNow</strong><br>
+    {{moFormat moNow 'HH:mm:ss'}}
+  </p>
+</template>
